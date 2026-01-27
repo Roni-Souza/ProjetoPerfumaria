@@ -6,14 +6,46 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
+*:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+button:active,
+a:active {
+  outline: none;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', 'Arial', sans-serif;
   background: #FFF8F0;
   color: #6B4423;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }

@@ -13,6 +13,15 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
+*:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,6 +57,8 @@ body {
   margin: 0;
   line-height: 1.2;
   font-style: italic;
+  cursor: default;
+  user-select: none;
 }
 
 .tagline {
@@ -57,6 +68,8 @@ body {
   margin-top: 0.25rem;
   font-weight: 300;
   letter-spacing: 0.5px;
+  cursor: default;
+  user-select: none;
 }
 
 .nav {
@@ -71,10 +84,18 @@ body {
   color: #999;
   text-decoration: none;
   transition: color 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-link:hover {
   color: #6B4423;
+}
+
+.nav-link:focus,
+.nav-link:active {
+  outline: none;
 }
 
 .search-icon {
@@ -83,10 +104,17 @@ body {
   color: #999;
   cursor: pointer;
   transition: color 0.3s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .search-icon:hover {
   color: #6B4423;
+}
+
+.search-icon:focus,
+.search-icon:active {
+  outline: none;
 }
 
 /* Main */
@@ -161,6 +189,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  pointer-events: none;
+}
+
+.hero-image-container:focus,
+.hero-image-container:active {
+  outline: none;
 }
 
 .hero-model-image {
@@ -170,6 +206,9 @@ body {
   object-fit: contain;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 .main-headline {
@@ -181,6 +220,8 @@ body {
   margin-top: 2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
+  cursor: default;
+  user-select: none;
 }
 
 /* Categories Section */
@@ -207,11 +248,18 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.category-card:focus,
+.category-card:active {
+  outline: none;
 }
 
 .skincare-card {
@@ -241,6 +289,9 @@ body {
   height: auto;
   object-fit: contain;
   border-radius: 10px;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 .product-display {
@@ -332,6 +383,8 @@ body {
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  cursor: default;
+  user-select: none;
 }
 
 .category-subtitle {
@@ -340,6 +393,8 @@ body {
   color: #6B4423;
   margin-bottom: 1.5rem;
   font-weight: 300;
+  cursor: default;
+  user-select: none;
 }
 
 .shop-button {
@@ -355,6 +410,13 @@ body {
   transition: all 0.3s ease;
   color: #6B4423;
   text-transform: uppercase;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shop-button:focus,
+.shop-button:active {
+  outline: none;
 }
 
 .skincare-button {
@@ -406,6 +468,13 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.feature-item:focus,
+.feature-item:active {
+  outline: none;
 }
 
 .feature-icon {
@@ -430,6 +499,7 @@ body {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
+  user-select: none;
 }
 
 /* Responsive */
